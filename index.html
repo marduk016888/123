@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>高齡客戶重要事項告知書</title>
+
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #e6f2ff;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.button-group {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.play-button {
+    padding: 10px 20px;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#play-zh {
+    background-color: #007bff;
+}
+
+#play-tw {
+    background-color: #28a745;
+}
+
+#play-hak {
+    background-color: #dc3545;
+}
+
+#play-en {
+    background-color: #17a2b8;
+}
+
+#play-vn {
+    background-color: #fd7e14;
+}
+
+#play-sign {
+    background-color: #6f42c1;
+}
+
+.play-button:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.audio-player {
+    display: none;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.audio-player {
+    display: none; 
+    margin-top: 20px;
+    text-align: center;
+}
+
+.video-player {
+    display: none; 
+    margin-top: 20px;
+    text-align: center;
+}
+
+.video-player iframe {
+    width: 100%;
+    height: 500px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+</style>
+
+
+  <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-P5GR7F72');</script>
+<!-- End Google Tag Manager -->
+</head>
+
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-P5GR7F72"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+    <div class="container">
+        <h1>高齡客戶重要事項告知書</h1>
+        <div class="button-group">
+            <button class="play-button" id="play-zh" onclick="playAudio('zh.mp3')">中文播放</button>
+            <button class="play-button" id="play-tw" onclick="playAudio('tw.mp3')">台語播放</button>
+            <button class="play-button" id="play-hak" onclick="playAudio('hak.mp3')">客語播放</button>
+            <button class="play-button" id="play-en" onclick="playAudio('en.mp3')">英語播放</button>
+            <button class="play-button" id="play-vn" onclick="playAudio('vn.mp3')">越語播放</button>
+            <button class="play-button" id="play-sign" onclick="playVideo()">手語播放</button>
+        </div>
+
+        <!-- 語音播放器 -->
+        <div id="audio-player" class="audio-player">
+            <audio id="audio" controls>
+                <source id="audio-source" src="" type="audio/mpeg">
+                您的瀏覽器不支援音頻播放。
+            </audio>
+        </div>
+
+        <!-- 影片播放器 -->
+        <div id="video-player" class="video-player">
+            <iframe id="video-iframe" src="" frameborder="0" allowfullscreen></iframe>
+        </div>
+
+        <div class="content">
+            <p>親愛的客戶，您好：</p>
+            <p>歡迎您來合作金庫證券開立受託買賣有價證券帳戶，在您辦理開戶之前，本公司特別要提醒您以下一些注意事項，這些內容與您的權益有重要的關係，請您務必仔細的閱讀，本公司已有提供字體放大版之開戶契約供您參閱，如有不清楚的地方，煩請您向業務人員洽詢，我們會非常樂意為您解說：</p>
+            <ol>
+                <li>您在本公司完成國內外有價證券開戶後，就可以依契約約定方式，委託本公司買賣上市、上櫃、興櫃以及外國的有價證券。</li>
+                <li>關於委託買賣、交割等相關事宜，如果您需要委託代理人來幫您處理時，必需要由您出具授權書，載明代理人的資料以及有權代理的範圍，並且要留存代理人印鑑卡或簽名樣式卡。</li>
+                <li>如果您要辦理印鑑變更作業，或者是要註銷在本公司的交易帳戶時，請您於營業時間內親自攜帶身分證明文件、原留印鑑來本公司辦理即可。</li>
+                <li>為了保障您交易的安全，請您務必妥善保管個人存摺（包括銀行存摺及集保公司存摺）、印鑑及各類密碼（含個人密碼及電子憑證），勿交付他人。一旦發生所持有之集保公司存摺、印鑑及各類密碼不慎遺失或被竊等情事時，請立即在營業時間內親自攜帶身分證明文件、原留印鑑來本公司辦理。</li>
+                <li>此外，提醒您特別注意，本公司之所屬員工（如經理人、營業員、後台人員）依法不得保管您的印鑑、款項、存摺或有價證券，或與您有金錢或股票借貸或代客操作之情事，如果發現這種情況，請您立即告訴本公司。</li>
+                <li>本公司接受您委託買賣國內有價證券，得向您收取之手續費上限為成交金額之千分之一點四二五，買賣外國有價證券，得向您收取之手續費上限為本公司公告牌告手續費率。</li>
+                <li>您於本公司下單成交後，應如期完成履行交付交割代價或交割證券，否則即為違約，本公司必需依規定申報違約及委託他證券經紀商反向處理該有價證券，反向處理所得之款項抵充您應償付之債務及費用後，倘仍有不足，本公司得向您追償，另本公司並得向您收取按成交金額之百分之七為上限之違約金，但屬有價證券當日沖銷交易作業辦法所稱當日沖銷交易之交割違約，應以當日沖銷交易相同數量部分之普通交割買賣相抵後，按買賣沖銷後差價金額為收取違約金上限。</li>
+                <li>有價證券買賣屬於投資交易行為，建議您在從事交易之前，審慎評估您的財務能力以及風險承擔能力。</li>
+                <li>本公司提供受託買賣服務，並沒有受存款保險及保險安定基金或其他相關保護機制之保障。</li>
+                <li>再次提醒您於簽約前務必詳閱本公司開戶契約之條款暨各項風險預告書之內容，若您對本公司提供受託買賣服務有任何疑義、或者是對本公司的服務有申訴的需求時，可洽原業務人員或高齡服務專線(02)8772-8585。</li>
+            </ol>
+        </div>
+    </div>
+  
+    <script>
+function stopAllMedia() {
+    const audio = document.getElementById('audio');
+    const video = document.getElementById('video');
+
+    if (audio) {
+        audio.pause();
+        audio.currentTime = 0;
+    }
+
+    if (video) {
+        video.pause();
+        video.currentTime = 0;
+    }
+}
+
+const audioFiles = {
+    'guide': 'guide.mp3', 
+};
+
+
+let guidePlayed = false; 
+
+
+function playAudio(fileName) {
+    stopAllMedia();
+
+    const audioPlayer = document.getElementById('audio-player');
+    const audioSource = document.getElementById('audio-source');
+    const audio = document.getElementById('audio');
+    const videoPlayer = document.getElementById('video-player');
+    const enterHint = document.getElementById('enter-hint'); 
+
+    if (videoPlayer) videoPlayer.style.display = 'none'; 
+    audioSource.src = "mid/" + fileName; 
+    audio.load();
+
+    if (audioPlayer) audioPlayer.style.display = 'block'; 
+    if (enterHint) enterHint.style.display = 'block'; 
+
+    audio.play();
+}
+
+
+function playGuide() {
+    if (!guidePlayed) { 
+        guidePlayed = true; 
+        playAudio(audioFiles['guide']); 
+    }
+}
+
+
+function changeContent(language) {
+    const zhContent = document.getElementById('content-zh');
+    const enContent = document.getElementById('content-en');
+    const vnContent = document.getElementById('content-vn');
+
+    if (zhContent) zhContent.style.display = 'none';
+    if (enContent) enContent.style.display = 'none';
+    if (vnContent) vnContent.style.display = 'none';
+
+    if (language === 'zh' && zhContent) {
+        zhContent.style.display = 'block';
+    } else if (language === 'en' && enContent) {
+        enContent.style.display = 'block';
+    } else if (language === 'vn' && vnContent) {
+        vnContent.style.display = 'block';
+    }
+}
+
+
+document.addEventListener('keydown', function(event) {
+    const audio = document.getElementById('audio');
+    const activeElement = document.activeElement;
+
+    if (!guidePlayed) {
+
+        playGuide();
+    } else {
+        if (activeElement.tagName === 'BUTTON' && event.key === 'Enter') {
+            return; 
+        }
+
+        switch (event.key) {
+            case '1':
+                playAudio('zh.mp3');
+                changeContent('zh');
+                break;
+            case '2':
+                playAudio('tw.mp3');
+                changeContent('zh'); 
+                break;
+            case '3':
+                playAudio('hak.mp3');
+                changeContent('zh'); 
+                break;
+            case '4':
+                playAudio('en.mp3');
+                changeContent('en');
+                break;
+            case '5':
+                playAudio('vn.mp3');
+                changeContent('vn');
+                break;
+            case 'Enter':
+                if (audio && document.activeElement.tagName !== 'BUTTON') {
+                    if (!audio.paused) {
+                        audio.pause();
+                    } else {
+                        audio.play();
+                    }
+                }
+                break;
+            default:
+                return; 
+        }
+    }
+});
+
+
+function increaseFontSize() {
+    const elements = document.querySelectorAll('.content, .play-button, .font-control button');
+    elements.forEach(element => {
+        const currentSize = window.getComputedStyle(element).fontSize;
+        element.style.fontSize = (parseFloat(currentSize) + 2) + 'px';
+    });
+}
+
+
+function decreaseFontSize() {
+    const elements = document.querySelectorAll('.content, .play-button, .font-control button');
+    elements.forEach(element => {
+        const currentSize = window.getComputedStyle(element).fontSize;
+        element.style.fontSize = (parseFloat(currentSize) - 2) + 'px';
+    });
+}
+
+
+function resetFontSize() {
+    const elements = document.querySelectorAll('.content, .play-button, .font-control button');
+    elements.forEach(element => {
+        element.style.fontSize = ''; 
+    });
+}
+
+
+
+    </script>
+</body>
+
+</html>
